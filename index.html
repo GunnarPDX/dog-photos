@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dogs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" integrity="sha512-ZRv40llEogRmoWgZwnsqke3HNzJ0kiI0+pcMgiz2bxO6Ew1DVBtWjVn0qjrXdT3+u+pSN36gLgmJiiQ3cQtyzA==" crossorigin="anonymous" />
+  <script src="index.js"></script>
+</head>
+
+<body>
+
+  <div class="container mt-6">
+    
+    <nav class="nav mb-3">
+      <div class="field is-grouped">
+        <p class="control">
+          <button class="button">
+            <a href="index.html">Dog Photos</a>
+          </button>
+        </p>
+        <p class="control">
+          <button class="button">
+            <a href="viewed.html">Recently Viewed</a>
+          </button>
+        </p>
+      </div>
+    </nav>
+  
+    <div class="field">
+      <div class="control">
+        <div class="select is-primary">
+          <select id="BreedSelect">
+            <option>Shiba</option>
+            <option>With options</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    
+    <img src="" id="DogPhoto" alt="" style="height: 400px;"/>
+  
+    <div class="field is-grouped">
+      <p class="control">
+        <button class="button is-primary" id="PrevPhotoButton">
+          <- Prev
+        </button>
+      </p>
+      <p class="control">
+        <button class="button is-primary" id="NextPhotoButton">
+          Next ->
+        </button>
+      </p>
+    </div>
+    
+    
+  </div>
+</body>
+
+</html>
