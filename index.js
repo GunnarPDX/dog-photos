@@ -30,7 +30,7 @@ function getDogPhotos(breed) {
 
 function updateDogPhoto(photos, i, breed) {
   const baseUrl = getUrlBase();
-  const url = baseUrl + '&' + breed + '&' + i;
+  const url = baseUrl + '#&' + breed + '&' + i;
   setUrl(url);
 
   localStorage.setItem(`${breed}-photos`, JSON.stringify(photos));
@@ -45,7 +45,7 @@ function getUrl() {
 }
 
 function getUrlBase() {
-  return getUrl().split('&')[0];
+  return getUrl().split('#')[0];
 }
 
 function setUrl(newUrl) {
